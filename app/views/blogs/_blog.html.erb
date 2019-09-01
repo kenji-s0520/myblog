@@ -1,0 +1,14 @@
+<li>
+    <h2><%= blog.title %></h2>
+    <% if blog.image != "" %>
+      <p><img src="<%= blog.image %>"></p>
+    <% end %>
+    <p><%= blog.content %></p>
+    <p><%= blog.created_at.strftime("%Y-%m-%d %H:%M") %></p>
+  </li>
+  <% if user_signed_in? %>
+    <ul class="button">
+      <li><%= link_to '編集', "/#{blog.id}/edit", method: :get%></li>
+      <li><%= link_to '削除', "/#{blog.id}", method: :delete %></li>
+    </ul>
+    <% end %>
