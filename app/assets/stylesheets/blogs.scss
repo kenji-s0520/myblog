@@ -96,12 +96,18 @@ li{
 }
 
 input#btn {
-  padding: 15px 40px;
-  font-size: 1.2em;
-  background-color: #37474f;
-  color: white;
-  border-style: none;
-  border-radius: 15px;
+  display: inline-block;
+  border-radius: 20%;
+  font-size: 25px;
+  text-align: center;
+  cursor: pointer;
+  padding: 10px 30px;
+  background: #1a1aff;
+  color: #ffffff;
+  line-height: 1em;
+  transition: .3s;
+  box-shadow: 4px 4px 3px #666666;
+  border: 2px solid #1a1aff;
 }
 
 ul.button {
@@ -124,6 +130,21 @@ ul.button {
 
 input.user_name {
   width: 50px;
+}
+
+.btn {
+  display: inline-block;
+  border-radius: 15px;
+  font-size: 18pt; 
+  text-align: center;
+  cursor: pointer;
+  padding: 12px 12px;
+  background: #000066;
+  color: #ffffff;
+  line-height: 1em;
+  transition: .3s;
+  box-shadow: 6px 6px 3px #666666;
+  border: 2px solid #000066;
 }
 
 footer {
