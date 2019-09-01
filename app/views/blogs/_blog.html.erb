@@ -4,7 +4,9 @@
       <p><img src="<%= blog.image %>"></p>
     <% end %>
     <p><%= blog.content %></p>
+    <div class="time">
     <p><%= blog.created_at.strftime("%Y-%m-%d %H:%M") %></p>
+    </div>
   </li>
   <% if user_signed_in? %>
     <ul class="button">

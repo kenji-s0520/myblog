@@ -15,7 +15,6 @@ li{
   background: skyblue;
   height: 180px;
   width: 100%;
-  // position: fixed;
 }
 
 .header__bar{
@@ -48,6 +47,7 @@ li{
   border-style: solid;
   border-color: white;
   border-width: 10px;
+  border-radius: 15px;
 }
 
 .new_users{
@@ -72,15 +72,15 @@ li{
 
 .list_blog p{
   padding-bottom: 15px;
-
 }
 
 .success{
   margin-left: 500px;
 }
 
-.contents_row{
-  // padding-top: 200px; 
+.time{
+  font-size: 15px;
+  color: #bdbdbd; 
 }
 
 .content{
@@ -94,9 +94,10 @@ li{
 input#btn{
   padding: 15px 40px;
   font-size: 1.2em;
-  background-color: grey;
+  background-color: #37474f;
   color: white;
   border-style: none;
+  border-radius: 15px;
 }
 
 ul.button{
@@ -116,6 +117,7 @@ ul.button li a{
   border-style: solid;
   border-color: white;
   border-width: 10px;
+  
 }
 
 .edit_blog{
