@@ -11,87 +11,91 @@ li{
   text-decoration:none;
 }
 
-.header{
+.header {
   background: skyblue;
   height: 180px;
   width: 100%;
 }
 
-.header__bar{
+.header__bar {
   font-size: 55px;
   font-family: cursive;
   color: white;
   text-align: center;
 }
 
-.name{
+.name {
   font-size: 20px;
   float: right;
   color: white;
-  margin-right: 15px;
+  margin-right: 20px;
 }
 
-.nav{
+.nav {
   color: skyblue;
   padding-top: 10px;
   list-style: none;
   display: flex;
   clear: both;
   float: right;
+  li {
+    font-weight: bold;
+    margin: 0 20px 0 15px;
+    background-color: white;
+    border-style: solid;
+    border-color: white;
+    border-width: 10px;
+    border-radius: 15px;
+  }
 }
 
-.nav li{
-  font-weight: bold;
-  margin: 0 15px 0 15px;
-  background-color: white;
-  border-style: solid;
-  border-color: white;
-  border-width: 10px;
-  border-radius: 15px;
-}
-
-.new_users{
-  // padding-top: 200px;
+.new_users {
+  font-size: 20px;
+  margin-top: 30px;
   margin-left: 500px;
 }
 
-.list_blog{
-  // padding-top: 200px;
+.new_user {
+  margin-top: 10px;
+  .field {
+    margin: 20px 0;
+  }
+}
+
+.list_blog {
   list-style: none;
   padding-left: 30px;
+  li {
+    border-bottom: solid 1px #eee;
+  }
+  h2 {
+    padding: 30px 0;
+    font-size: 30px;
+  }
+  p {
+    font-size: 20px;
+    padding-bottom: 15px;
+  }
 }
 
-.list_blog li{
-  border-bottom: solid 1px #eee;
-}
-
-.list_blog h2{
-  padding: 30px 0;
-  font-size: 30px;
-}
-
-.list_blog p{
-  padding-bottom: 15px;
-}
-
-.success{
-  margin-left: 500px;
-}
-
-.time{
+.time {
   font-size: 15px;
   color: #bdbdbd; 
 }
 
-.content{
+.success {
   margin-left: 500px;
 }
 
-.form-group{
+.content {
+  margin-left: 500px;
+}
+
+.form-group {
   padding-bottom: 30px;
 }
 
-input#btn{
+input#btn {
   padding: 15px 40px;
   font-size: 1.2em;
   background-color: #37474f;
@@ -100,38 +104,32 @@ input#btn{
   border-radius: 15px;
 }
 
-ul.button{
+ul.button {
   font-weight: bold; 
   display: flex;
   padding-bottom: 20px;
-}
-
-ul.button{
-  // border-bottom: solid 1px #eee;
-}
-
-ul.button li a{
-  color: white;
-  padding: 10px 15px 10px 15px;
-  background-color: black;
-  border-style: solid;
-  border-color: white;
-  border-width: 10px;
-  
+  li a {
+    color: white;
+    padding: 10px 15px 10px 15px;
+    background-color: black;
+    border-style: solid;
+    border-color: white;
+    border-width: 10px;
+  }
 }
 
 .edit_blog{
   margin-left: 500px;
 }
 
-input.user_name{
+input.user_name {
   width: 50px;
 }
 
-footer{
+footer {
   padding-top: 100px;
   color: grey;
-  p{
+  p {
     text-align: center;
   }
 }
