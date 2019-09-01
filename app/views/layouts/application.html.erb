@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Myblog</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__bar row">
+        <h1>MY BLOG</h1>
+      </div>
+      <% if user_signed_in? %>
+      <p class="name">ユーザー：<%= current_user.nickname %>さん</p>
+      <ul class="nav">
+        <li><a href="/new" >新規投稿</a></li>
+        <li><%= link_to "ログアウト", destroy_user_session_path, method: :delete %></li>
+    </ul>
+    <% else %>
+    <ul class="nav">
+     <li><%= link_to "ログイン", new_user_session_path, class: 'post' %></li>
+     <li><%= link_to "新規登録", new_user_registration_path, class: 'post' %></li>
+    </ul>
+    <% end %>
+    </header> 
+    <%= yield %>
+  </body>
+</html>

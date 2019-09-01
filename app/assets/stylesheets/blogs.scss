@@ -1,0 +1,115 @@
+// Place all the styles related to the blogs controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+a{
+  text-decoration: none;
+  color: skyblue;
+}
+
+li{
+  text-decoration:none;
+}
+
+.header{
+  background: skyblue;
+  height: 200px;
+  width: 100%;
+  position: fixed;
+}
+
+.header__bar{
+  font-size: 55px;
+  font-family: cursive;
+  color: white;
+  text-align: center;
+}
+
+.name{
+  font-size: 20px;
+  float: right;
+  color: white;
+  padding-top: 20px;
+  margin-right: 15px;
+}
+
+.nav{
+  color: skyblue;
+  padding-top: 15px;
+  list-style: none;
+  display: flex;
+  clear: both;
+  float: right;
+}
+
+.nav li{
+  font-weight: bold;
+  margin: 0 15px 0 15px;
+  background-color: white;
+  border-style: solid;
+  border-color: white;
+  border-width: 10px;
+}
+
+.list_blog{
+  padding-top: 200px;
+  list-style: none;
+  padding-left: 30px;
+}
+
+.list_blog h2{
+  padding: 30px 0;
+  font-size: 30px;
+}
+
+.list_blog p{
+  padding-bottom: 15px;
+
+}
+
+// .list_blog li{
+//   border-bottom: solid 1px #eee;
+// }
+
+.contents_row{
+  padding-top: 200px; 
+}
+
+.content{
+  margin-left: 500px;
+}
+
+.form-group{
+  padding-bottom: 30px;
+}
+
+input#btn{
+  padding: 15px 40px;
+  font-size: 1.2em;
+  background-color: grey;
+  color: white;
+  border-style: none;
+}
+
+ul.button{
+  font-weight: bold; 
+  display: flex;
+  padding-bottom: 20px;
+}
+
+ul.button{
+  border-bottom: solid 1px #eee;
+}
+
+ul.button li a{
+  color: white;
+  padding: 10px 15px 10px 15px;
+  background-color: black;
+  border-style: solid;
+  border-color: white;
+  border-width: 10px;
+}
+
+.edit_blog{
+  margin-left: 500px;
+}

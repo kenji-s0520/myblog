@@ -1,0 +1,18 @@
+<ul class="list_blog">
+  <% @blogs.each do |blog| %>
+  <li>
+    <h2><%= blog.title %></h2>
+    <% if blog.image != "" %>
+      <p><img src="<%= blog.image %>"></p>
+    <% end %>
+    <p><%= blog.content %></p>
+    <p><%= blog.created_at %></p>
+  </li>
+  <% if user_signed_in? %>
+    <ul class="button">
+      <li><%= link_to '編集', "/#{blog.id}/edit", method: :get%></li>
+      <li><%= link_to '削除', "/#{blog.id}", method: :delete %></li>
+    </ul>
+    <% end %>
+  <% end %>
+</ul>
