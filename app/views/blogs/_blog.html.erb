@@ -4,11 +4,18 @@
       <p><img src="<%= blog.image %>"></p>
     <% end %>
     <p><%= blog.content %></p>
+    <div class="name">
+          <a>
+            <span>投稿者</span><%= blog.user.nickname %>さん
+          </a>
+        </span>
+        </div>
     <div class="time">
     <p><%= blog.created_at.strftime("%Y-%m-%d %H:%M") %></p>
+    
     </div>
   </li>
-  <% if user_signed_in? %>
+  <% if user_signed_in? && blog.user_id == current_user.id %>
     <ul class="button">
       <li><%= link_to '編集', "/#{blog.id}/edit", method: :get%></li>
       <li><%= link_to '削除', "/#{blog.id}", method: :delete %></li>

@@ -29,6 +29,8 @@ class BlogsController < ApplicationController
     end
   end
 
+  helper_method :current_user, :logged_in?
+
   private
   def blog_params
     params.permit(:title, :image, :content).merge(user_id: current_user.id)
