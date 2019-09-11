@@ -63,3 +63,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'devise'
 gem 'kaminari'
+gem 'bootstrap-sass'
+gem 'haml-rails'
+gem 'jquery-rails'
