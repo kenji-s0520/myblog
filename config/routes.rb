@@ -10,4 +10,8 @@ Rails.application.routes.draw do
   delete '/:id' => 'blogs#destroy'
   get '/:id/edit' => 'blogs#edit'
   patch '/id' => 'blogs#update'
+
+  post '/like/:blog_id' => 'likes#like', as: 'like'
+  delete '/like/:blog_id' => 'likes#unlike', as: 'unlike'
+  
 end

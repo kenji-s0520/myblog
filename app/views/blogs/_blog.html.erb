@@ -1,19 +1,22 @@
 <li>
     <h2><%= blog.title %></h2>
+    <div class="time">
+    <p><%= blog.created_at.strftime("%Y-%m-%d %H:%M") %></p>
+    </div>
+    <div class="user_name">
+        <a>
+          <span>投稿者</span><%= blog.user.nickname %>さん
+        </a>
+    </div>
     <% if blog.image != "" %>
       <p><img src="<%= blog.image %>"></p>
     <% end %>
     <p><%= blog.content %></p>
-    <div class="name">
-          <a>
-            <span>投稿者</span><%= blog.user.nickname %>さん
-          </a>
-        </span>
-        </div>
-    <div class="time">
-    <p><%= blog.created_at.strftime("%Y-%m-%d %H:%M") %></p>
     
-    </div>
+    <% if user_signed_in? && blog.user_id != current_user.id%>
+      <%= render 'likes/like_links', blog: blog %>
+    <% end %>
+    
   </li>
   <% if user_signed_in? && blog.user_id == current_user.id %>
     <ul class="button">

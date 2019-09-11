@@ -31,6 +31,17 @@ li{
   margin-right: 20px;
 }
 
+.user_name {
+  float: right;
+  margin-top: 20px;
+  padding-right: 20px;
+  font-size: 20px;
+    span {
+      padding-right: 10px;
+    }
+
+}
+
 .nav {
   color: skyblue;
   padding-top: 10px;
@@ -69,6 +80,8 @@ li{
     border-bottom: solid 1px #eee;
   }
   h2 {
+    display: inline-block;
+    margin-right: 15px;
     padding: 30px 0;
     font-size: 30px;
   }
@@ -79,7 +92,8 @@ li{
 }
 
 .time {
-  font-size: 15px;
+  display: inline-block;
+  font-size: 10px;
   color: #bdbdbd; 
 }
 
@@ -93,6 +107,21 @@ li{
 
 .form-group {
   padding-bottom: 30px;
+}
+
+input#edit_btn{
+  display: inline-block;
+  border-radius: 20%;
+  font-size: 25px;
+  text-align: center;
+  cursor: pointer;
+  padding: 10px 30px;
+  background: #1a1aff;
+  color: #ffffff;
+  line-height: 1em;
+  transition: .3s;
+  box-shadow: 4px 4px 3px #666666;
+  border: 2px solid #1a1aff;
 }
 
 input#btn {
@@ -145,6 +174,17 @@ input.user_name {
   transition: .3s;
   box-shadow: 6px 6px 3px #666666;
   border: 2px solid #000066;
+}
+
+.like__button{
+  color: grey;
+  font-size: 20px;
+}
+
+.pagination{
+  padding-top: 20px;
+  font-size: 18px;
+  color: #bdbdbd;
 }
 
 footer {
