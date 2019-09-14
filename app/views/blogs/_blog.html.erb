@@ -13,7 +13,7 @@
     <% end %>
     <p><%= blog.content %></p>
     
-    <% if user_signed_in? && blog.user_id != current_user.id%>
+    <% if user_signed_in? %>
       <%= render 'likes/like_links', blog: blog %>
     <% end %>
     
@@ -21,6 +21,6 @@
   <% if user_signed_in? && blog.user_id == current_user.id %>
     <ul class="button">
       <li><%= link_to '編集', "/#{blog.id}/edit", method: :get%></li>
-      <li><%= link_to '削除', "/#{blog.id}", method: :delete %></li>
+      <li><%= link_to '削除', "/#{blog.id}", method: :delete, data: {confirm: "本当に削除しますか？"} %></li>
     </ul>
     <% end %>
